@@ -1,0 +1,23 @@
+http://:38333 {
+    root * /srv/course
+
+    encode zstd gzip
+
+    @static path *.css *.js *.woff2 *.woff *.ttf *.png *.jpg *.svg *.ico
+    header @static Cache-Control "public, max-age=86400, must-revalidate"
+
+    header {
+        X-Content-Type-Options    "nosniff"
+        X-Frame-Options           "SAMEORIGIN"
+        Referrer-Policy           "strict-origin-when-cross-origin"
+        -Server
+    }
+
+    try_files {path} /index.html
+    file_server
+
+    log {
+        output stdout
+        format console
+    }
+}

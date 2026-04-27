@@ -1,0 +1,8 @@
+services:
+  caddy:
+    image: caddy:latest
+    ports:
+      - "38333:38333"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - .:/srv
