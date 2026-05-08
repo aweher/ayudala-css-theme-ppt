@@ -50,7 +50,7 @@
   --r-background-color: var(--ayl-bg-primary);
   --r-main-color:       var(--ayl-text-primary);
   --r-main-font:        var(--ayl-font-body);
-  --r-main-font-size:   32px;
+  --r-main-font-size:   28px;
   --r-heading-color:    var(--ayl-text-primary);
   --r-heading-font:     var(--ayl-font-display);
   --r-heading-font-weight: 700;
@@ -69,7 +69,7 @@
 
 .reveal {
   font-family: var(--ayl-font-body);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   color: var(--ayl-text-primary);
   letter-spacing: -0.005em;
@@ -80,8 +80,10 @@
 }
 
 .reveal .slides section {
-  padding: 24px 32px;
+  padding: 40px 32px 36px 32px;
   line-height: 1.45;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
@@ -91,7 +93,7 @@
   letter-spacing: -0.02em;
   line-height: 1.1;
   text-transform: none;
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
 }
 
 .reveal h1 { font-size: 2.6em; }
@@ -99,7 +101,7 @@
 .reveal h3 { font-size: 1.4em; }
 .reveal h4 { font-size: 1.15em; color: var(--ayl-orange); }
 
-.reveal p { margin: 0 0 18px 0; line-height: 1.5; }
+.reveal p { margin: 0 0 12px 0; line-height: 1.5; }
 
 .reveal a {
   color: var(--ayl-orange);

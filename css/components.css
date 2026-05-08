@@ -1928,7 +1928,7 @@
 /* --- Thanks / cierre slide --- */
 .thanks-slide {
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .thanks-slide h1 {
   font-size: 3.5em;
@@ -2210,10 +2210,6 @@
   padding: 6px 12px;
   font-size: 0.66em;
   line-height: 1.4;
-}
-.reveal .slides section h3 {
-  /* los h3 de los glossary son grandes; bajamos un poco */
-  margin-bottom: 4px;
 }
 /* analogy-table (#/2/14) también compactada */
 .analogy-table {
